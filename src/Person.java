@@ -3,12 +3,14 @@ public class Person {
     private String nama;
     private int tahunLahir;
     private String kategori;
+    private String warnaMcLaren;
 
-    public Person(String id, String nama, int tahunLahir, String kategori){
+    public Person(String id, String nama, int tahunLahir, String kategori, String warnaMcLaren){
         this.id = id;
         this.nama = nama;
         this.tahunLahir = tahunLahir;
         this.kategori = kategori;
+        this.warnaMcLaren = warnaMcLaren;
     }
 
     public String getId(){
@@ -37,5 +39,12 @@ public class Person {
     }
     public void setKategori(String kategori){
         this.kategori = kategori;
+    }
+
+    public String getWarna(){
+        return warnaMcLaren;
+    }
+    public void setWarna(String warnaMcLaren){
+        this.warnaMcLaren = warnaMcLaren;
     }
 }
